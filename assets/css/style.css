@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit; }
+
+html {
+  font-size: 62.5%;
+  direction: rtl; }
+  @media only screen and (max-width: 30em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+button {
+  cursor: pointer;
+  outline: none !important; }
+
+@font-face {
+  font-family: Vazir;
+  src: url("Vazir.eot");
+  src: url("Vazir.eot?#iefix") format("embedded-opentype"), url("Vazir.woff") format("woff"), url("Vazir.ttf") format("truetype");
+  font-weight: normal; }
+
+body {
+  font-family: Vazir !important; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.header {
+  font-size: 1.8rem; }
+  .header section {
+    height: 5rem;
+    background-color: var(--color-primary-dark); }
+  .header i {
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    border-radius: 1.1rem;
+    width: 2.7rem;
+    text-align: center;
+    background-color: var(--color-primary-light);
+    color: black; }
+  .header span {
+    font-size: 1.8rem;
+    color: var(--color-primary-light); }
+  .header__nav {
+    width: 100% !important;
+    height: 8rem;
+    background-color: var(--color-primary-light);
+    box-shadow: 0 2px 15px var(--color-primary); }
+  .header a {
+    margin-right: 1.5rem;
+    color: var(--color-primary-dark); }
+  .header__user {
+    padding: 1px 1rem;
+    border-right: 1px solid var(--color-primary);
+    border-left: 1px solid var(--color-primary); }
+    .header__user i {
+      font-size: 2.5rem;
+      margin: 0 5px;
+      color: var(--color-primary-dark); }

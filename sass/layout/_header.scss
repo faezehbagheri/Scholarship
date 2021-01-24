@@ -1,0 +1,47 @@
+.header{
+    font-size: 1.8rem;
+
+    section{
+        height: 5rem;
+        background-color: var(--color-primary-dark);
+    }
+
+    i{
+        font-size: 1.7rem;
+        margin-right: 1rem;
+        border-radius: 1.1rem;
+        width: 2.7rem;
+        text-align: center;
+        background-color: var(--color-primary-light);
+        color: black;
+    }
+
+    span{
+        font-size: 1.8rem;
+        color: var(--color-primary-light);
+    }
+
+    &__nav{
+        width: 100% !important;
+        height: 8rem;
+        background-color: var(--color-primary-light);
+        box-shadow: 0 2px 15px var(--color-primary);
+    }
+
+    a{
+        margin-right: 1.5rem;
+        color: var(--color-primary-dark);
+    }
+
+    &__user{
+        padding: 1px 1rem;
+        border-right: 1px solid var(--color-primary);
+        border-left: 1px solid var(--color-primary);
+
+        i{
+            font-size: 2.5rem;
+            margin: 0 5px;
+            color: var(--color-primary-dark);
+        }
+    }
+}

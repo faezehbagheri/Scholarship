@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%;
+    direction: rtl;
+
+    
+    // @include respond(tab-port){ font-size: 50%; }
+
+    // @include respond(sm){ font-size: 45%; }
+    
+    @include respond(phone){ font-size: 50%; }
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+    outline: none !important;
+}
