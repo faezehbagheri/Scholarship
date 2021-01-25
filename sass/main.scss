@@ -7,7 +7,11 @@
 @import "base/typography";
 @import "base/utilities";
 
-// @import "components/bime";
+@import "components/card";
+@import "components/form";
+@import "components/hamkar";
+@import "components/rightside";
+@import "components/select";
 
 @import "layout/header";
 @import "layout/footer";

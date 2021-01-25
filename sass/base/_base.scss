@@ -25,6 +25,10 @@ body {
     overflow-x: hidden;
 }
 
+a,a:link,a:visited{
+    text-decoration: none !important;
+}
+
 button{
     cursor: pointer;
     outline: none !important;

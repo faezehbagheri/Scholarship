@@ -18,3 +18,40 @@
 body{
     font-family: Vazir !important;
 }
+
+.heading{
+    width: 90%;
+    border-bottom: 2px solid var(--color-primary);
+    margin-bottom: 3rem;
+    h3{
+        font-size: 2.8rem !important;
+        background-color: white;
+        margin-bottom: -1.5rem;
+
+        &::before{
+            content: "";
+            width: 2rem;
+            // height: 2rem;
+            padding: 0 6px;
+            font-size: 8px;
+            border-radius: 100%;
+            background-color: var(--color-secondary);
+            margin-left: 3rem;
+        }
+        &::after{
+            content: "";
+            width: 2rem;
+            // height: 2rem;
+            padding: 0 6px;
+            font-size: 8px;
+            border-radius: 100%;
+            background-color: var(--color-secondary);
+            margin-right: 3rem;
+        }
+    }
+}
+
+.bg-blue{background-color: var(--blue-dark);}
+.bg-green{background-color: var(--green);}
+.bg-yellow{background-color: var(--yellow);}
+.bg-red{background-color: var(--color-secondary);}

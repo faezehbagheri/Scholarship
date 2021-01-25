@@ -1,0 +1,33 @@
+.rightside{
+    position: fixed;
+    right: 1%;
+    z-index: 99;
+
+    a,a:link,a:visited{
+        text-decoration: none;
+        color: var(--color-primary-dark);
+        font-size: 1.3rem;
+        background-color: var(--color-primary-light);
+        margin-top: 3px;
+        padding: 7px 7px;
+        border: 1px solid var(--color-primary);
+        border-radius: 1rem;
+        text-align: center;
+        transition: all .3s ease;
+
+        &:hover{
+            border: 1px solid var(--color-secondary) !important;
+            box-shadow:  0 0 2px var(--color-secondary);
+        }
+    }
+
+    i{
+        color: var(--color-secondary);
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    img{
+        height: 2rem;
+    }
+}
