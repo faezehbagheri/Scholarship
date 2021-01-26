@@ -49,7 +49,7 @@
         font-size: 5rem;
         color: rgba($color: #eeeeee, $alpha: .8);
         @include centerABS();
-        transition: all .3s ease;
+        transition: all .5s ease;
     }
 
     section{
@@ -60,7 +60,7 @@
         transform: translateY(-100%);
         padding: 5px 2rem !important;
         color: white;
-        transition: all .3s ease;
+        transition: all .5s ease;
     }
 
     h3{
@@ -71,7 +71,8 @@
         height: 0;
         overflow: hidden;
         color: white !important;
-        transition: all .3s ease;
+        transition: all .5s ease;
+        line-height: 2.5rem !important;
     }
 
     span{

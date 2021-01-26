@@ -1,5 +1,7 @@
 .header{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+
+    @include respond(lg){font-size: 1.3rem;}
 
     section{
         height: 5rem;
@@ -10,7 +12,8 @@
         font-size: 1.7rem;
         margin-right: 1rem;
         border-radius: 1.1rem;
-        width: 2.7rem;
+        width: 2.9rem;
+        height: 3rem;
         text-align: center;
         background-color: var(--color-primary-light);
         color: black;

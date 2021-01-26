@@ -4,31 +4,27 @@
         padding: 2rem 5px;
         border-bottom: 2px solid var(--color-primary);
     }
-
-    h1{
-        margin: 1.5rem 0;
-        font-size: 3rem;
-        color: var(--color-primary-dark);
-    }
     
     p{
         font-size: 1.5rem;
         color: var(--color-primary-dark);
         text-align: justify;
+
+        @include respond(sm){
+            line-height: 5rem;
+            font-size: 2rem;
+        }
     }
 
     a{
         color: var(--color-primary);
         font-size: 1.6rem;
         // float: left;
+
+        @include respond(sm){font-size: 2rem;}
     }
 
     i{margin-right: 5px;}
 
-    &__circle{
-        height: 6rem;
-        width: 6rem !important;
-        border-radius: 100%;
-        background-color: var(--color-secondary);
-    }
+    
 }

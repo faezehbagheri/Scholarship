@@ -1,0 +1,27 @@
+.collapse-tab{
+    margin-top: 1.5rem;
+
+    &__tab{
+        border: 2px solid var(--color-border);
+        height: 5.5rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        font-size: 2.8rem;
+        color: var(--color-secondary);
+
+        button{
+            height: 5.7rem;
+            padding: 6px 4rem;
+            font-size: 2.8rem;
+            border: none;
+            background-color: var(--color-secondary);
+            color: white;
+            margin-left: 2rem;
+        }
+    }
+
+    &__content{
+        display: none;
+        height: 15rem;
+    }
+}

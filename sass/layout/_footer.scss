@@ -4,6 +4,8 @@
     color: var(--color-primary-light);
     min-height: 45rem;
 
+    @include respond(sm){font-size: 2rem;}
+
     &__main{
         min-height: 45rem;    
     }
@@ -34,6 +36,7 @@
 
     span{
         margin-top: 1rem;
+        text-align: center;
         i{
             background-color: var(--color-secondary);
             margin-left: 1rem;

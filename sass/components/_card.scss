@@ -1,9 +1,17 @@
-.cards{
+.card1{
     background-color: var(--color-primary-light);
     height: 41rem;
+    width: 85%;
     margin-top: 8rem;
+    margin-bottom: 2rem;
+    margin-left: 0 !important;
+    position: relative;
+    right: 50%;
+    transform: translate(50%);
     border-radius: 1rem;
     box-shadow: 0 0 5px var(--color-primary);
+
+    @include respond(sm){height: 45rem;}
 
     &__header{
         height: 23rem;
@@ -58,7 +66,24 @@
         // list-style-type: none;
         margin-top: 1rem;
         height: 15.5rem;
+        direction: ltr;
         overflow-y: scroll;
+
+        @include respond(sm){height: 20rem;}
+
+        &::-webkit-scrollbar-track{
+            border-radius: 10px;
+            position: absolute;
+        }
+    
+        &::-webkit-scrollbar{
+            width: 8px;
+        }
+    
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: var(--color-primary);
+        }
     }
 
     a,a:link,a:visited{
@@ -96,4 +121,42 @@
 }
 .bg-img4{
     background-image: url(../../assets/img/Shape8.png);
+}
+
+.card2{
+
+    &__circle{
+        height: 6rem;
+        width: 6rem !important;
+        border-radius: 100%;
+        background-color: var(--color-secondary);
+    }
+
+    h1{
+        margin: 1.5rem 0;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: var(--color-primary-dark);
+
+        @include respond(md){font-size: 2.4rem;}
+    }
+    
+    p{
+        font-size: 1.5rem;
+        color: var(--color-primary-dark);
+        text-align: justify;
+
+        @include respond(sm){
+            line-height: 5rem;
+            font-size: 2rem;
+        }
+    }
+
+    a{
+        color: var(--color-primary);
+        font-size: 1.6rem;
+        float: left;
+
+        @include respond(sm){font-size: 2rem;}
+    }
 }
