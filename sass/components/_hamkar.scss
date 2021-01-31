@@ -3,6 +3,14 @@
     margin-left: 8px;
     margin-top: 3rem;
 
+    div.lg{
+        width: 35rem;
+
+        section{
+            padding: 1rem 5rem !important;
+        }
+    }
+
     div{
         width: 19rem;
         // background-color: rebeccapurple;
@@ -18,7 +26,7 @@
     
             h3{
                 color: var(--color-secondary);
-                margin-top: 3rem;
+                margin-top: 1rem;
             }
     
             i{
@@ -30,10 +38,15 @@
     
             p{
                 height: auto;
+                font-size: 1.4rem;
             }
     
             span{
                 top: 92%;
+            }
+
+            button{
+                display: block;
             }
         }
     }
@@ -79,5 +92,17 @@
         position: fixed;
         top: 60%;
         font-size: 1.2rem;
+    }
+    
+    button{
+        height: 3.5rem;
+        width: 12rem;
+        font-size: 1.5rem;
+        border-radius: 3rem;
+        border: none;
+        background-color: var(--color-secondary);
+        color: white;
+        display: none;
+        float: left;
     }
 }

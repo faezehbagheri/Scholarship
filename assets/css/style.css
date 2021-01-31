@@ -272,13 +272,23 @@ body {
     display: none;
     height: 15rem; }
 
-form {
+.form {
   padding: 1.5rem 0;
   margin-top: 2rem;
   border-radius: 1rem;
   border: 1px solid var(--color-primary);
   background-color: var(--color-primary-light); }
-  form button {
+  .form input {
+    height: 5.5rem;
+    outline: none;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    background-color: var(--color-primary-light);
+    border: 1px solid var(--color-primary);
+    padding: 0 3rem; }
+  .form i {
+    margin-right: 1rem; }
+  .form button {
     width: 14rem !important;
     height: 4.2rem;
     border-radius: 3rem;
@@ -288,10 +298,18 @@ form {
     color: white;
     box-shadow: 0 0 0 2px white, 0 0 0 4px var(--color-secondary); }
     @media only screen and (max-width: 48em) {
-      form button {
+      .form button {
         height: 5.2rem;
         font-size: 2rem;
         margin-top: 3rem !important; } }
+
+.faq {
+  background-color: white !important;
+  border: none; }
+  .faq button {
+    height: 5.5rem;
+    width: 20rem !important;
+    font-size: 1.8rem; }
 
 .gallery__item div {
   width: 100% !important;
@@ -299,7 +317,7 @@ form {
   margin: 0 auto;
   cursor: pointer; }
   .gallery__item div:hover section {
-    height: 100%; }
+    height: 35rem; }
   .gallery__item div:hover h3 {
     color: var(--color-secondary);
     margin-top: 3rem; }
@@ -347,7 +365,8 @@ form {
   overflow: hidden;
   color: white !important;
   transition: all .5s ease;
-  line-height: 2.5rem !important; }
+  line-height: 2.5rem !important;
+  font-size: 1.6rem; }
 
 .gallery__item span {
   position: fixed;
@@ -361,10 +380,39 @@ form {
   margin-top: 1rem;
   box-shadow: 0 0 5px var(--color-primary); }
 
+.gallery .abs-position {
+  position: absolute;
+  right: 75%;
+  top: 2%; }
+
+.gallery__images {
+  position: relative; }
+  .gallery__images img {
+    height: 12rem;
+    width: 95%;
+    background-color: pink; }
+  .gallery__images p {
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 12rem;
+    width: 95% !important;
+    cursor: pointer; }
+  .gallery__images i {
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .hamkar {
   height: 26.5rem;
   margin-left: 8px;
   margin-top: 3rem; }
+  .hamkar div.lg {
+    width: 35rem; }
+    .hamkar div.lg section {
+      padding: 1rem 5rem !important; }
   .hamkar div {
     width: 19rem;
     position: relative;
@@ -374,16 +422,19 @@ form {
       height: 100%; }
     .hamkar div:hover h3 {
       color: var(--color-secondary);
-      margin-top: 3rem; }
+      margin-top: 1rem; }
     .hamkar div:hover i {
       font-size: 4rem;
       color: var(--color-secondary);
       top: 70%;
       left: 20%; }
     .hamkar div:hover p {
-      height: auto; }
+      height: auto;
+      font-size: 1.4rem; }
     .hamkar div:hover span {
       top: 92%; }
+    .hamkar div:hover button {
+      display: block; }
   .hamkar img {
     width: 100%;
     height: 26rem;
@@ -418,6 +469,16 @@ form {
     position: fixed;
     top: 60%;
     font-size: 1.2rem; }
+  .hamkar button {
+    height: 3.5rem;
+    width: 12rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: var(--color-secondary);
+    color: white;
+    display: none;
+    float: left; }
 
 .rightside {
   position: fixed;
@@ -563,3 +624,66 @@ form {
 
 .uni .heading {
   width: 100%; }
+
+.uni__info {
+  width: 98%;
+  height: 46rem;
+  background-color: var(--color-primary-light);
+  border: 1px solid var(--color-primary);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  overflow: hidden; }
+  .uni__info div {
+    width: 100%; }
+
+.uni__logo {
+  width: 18rem;
+  margin: 1rem auto; }
+
+.uni table {
+  width: 90%;
+  font-size: 1.6rem;
+  margin: 1rem auto;
+  text-align: center; }
+
+.uni td {
+  background-color: white; }
+
+.uni__map p {
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  padding: .7rem;
+  background-color: var(--color-secondary); }
+
+.uni__map img {
+  width: 100%;
+  height: 15rem; }
+
+.uni__comments section {
+  height: 20rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 1.5rem;
+  margin-top: 1.5rem;
+  float: left; }
+
+.uni__comments .admin {
+  background-color: var(--color-primary-light); }
+
+.uni__comments .l-border {
+  padding: 2rem 0;
+  border-left: 1px solid var(--color-primary); }
+
+.uni__comments img {
+  height: 10rem;
+  width: 10rem; }
+
+.uni__comments p {
+  font-size: 1.8rem; }
+
+.uni__comments span {
+  font-size: 2.5rem;
+  padding: 0 2.5rem;
+  border: 2px solid var(--color-primary-light);
+  border-radius: 3rem;
+  cursor: pointer; }

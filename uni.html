@@ -110,17 +110,64 @@
     <main class="uni d-flex justify-content-center" >
         <div class="col-lg-10 d-flex flex-column align-items-center pb-5">
             <!-- اطلاعات دانشگاه -->
-            <div class="d-flex col-12" style="height: 49rem;">
-                <div class="col-5"></div>
-                <div class="d-flex flex-column col-7">
-                    <div class="gallery d-flex">
+            <div class="d-flex flex-column flex-xl-row col-12" style="height: 49rem;">
+                <div class="col-xl-5">
+                    <div class="uni__info d-flex flex-column align-items-center col-12 px-0">
+                        <img class="uni__logo" src="assets/img/uni_logo.png">
+                        <!-- جدول ها -->
+                        <div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>رتبه جهانی</th>
+                                        <th>نوع دانشگاه</th>
+                                        <th>تعداد کل دانشجو</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>35</td>
+                                        <td>دولتی</td>
+                                        <td>2569 نفر</td>
+                                    </tr>           
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>خروجی تحقیقاتی</th>
+                                        <th>تعداد دانشجویان بین المللی</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>6200 مقاله</td>
+                                        <td>2569 نفر</td>
+                                    </tr>           
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- نقشه -->
+                        <div class="uni__map">
+                            <p>نمایش محل دانشگاه روی نقشه
+                                <i class="fas fa-map-marker-alt"></i>
+                            </p>
+                            <img src="assets/img/uni_map.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery d-flex flex-column col-xl-7">
+                    <div class="d-flex">
                         <div class="gallery__item col-9 ">
                             <div>
                                 <img src="assets/img/gallery1.png">
                                 <i class="fas fa-play"></i>
                                 <section>
                                     <h3>جاذبه های گردشگری</h3>
-                                    <p>این گمپ های برونرزی، دوره های آموزشی، تفریحی و گردشی هستند</p>
+                                    <p>این کمپ‌های برون مرزی، دوره‌های آموزشی، تفریحی و گردشی هستند که در تعطیلات تابستان، توسط موسسات و کالج‌های بین المللی
+                                        تحت نظر سرپرستانو مربیان حرفه‌ای و با حضور دانش‌آموزانی با ملیت‌های مختلف از سرتا سر دنیا برگزار می‌گردد. این کمپ‌های برون
+                                        مرزی، دوره‌های آموزشی، تفریحی و گردشی هستند که در تعطیلات تابستان، توسط موسسات و کالج‌های بین المللی، تحت نظر سرپرستان
+                                       .و مربیان حرفه‌ای و با حضور دانش‌آموزانی با ملیت‌های مختلف از سرتا سر دنیا برگزار می‌گردد</p>
                                     <span>زمان مشاهده‌ی ویدئو 5 دقیقه</span>
                                 </section>
                             </div>
@@ -130,12 +177,22 @@
                             <img src="assets/img/gallery3.png">
                         </div>
                     </div>
-                    <div class="d-flex">
-                        <img src="assets/img/">
-                        <img src="assets/img/">
-                        <img src="assets/img/">
-                        <img src="assets/img/">
-                        <img src="assets/img/">                        
+                    <div class="gallery__images d-flex col-12 pr-0">
+                        <div class="col-3 px-0">
+                            <img src="assets/img/gallery4.png">
+                        </div>
+                        <div class="col-3 px-0">
+                            <img src="assets/img/gallery8.png">
+                        </div>
+                        <div class="col-3 px-0">
+                            <img src="assets/img/gallery6.png">
+                        </div>
+                        <div class="col-3 px-0">
+                            <img src="assets/img/gallery7.png">
+                        </div>
+                        <div class="col-3 px-0 abs-position">
+                            <p><i  class="fas fa-plus"></i></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -206,6 +263,125 @@
                          اسکان
                     </div>
                     <div class="collapse-tab__content"></div>
+                </div>
+            </div>
+
+            <!-- پرسش و پاسخ -->
+            <div class="d-flex flex-column align-items-center flex-wrap py-5 col-12" >
+                <div class="heading d-flex justify-content-center">
+                    <h3>پرسش و پاسخ</h3>
+                </div>
+                <form class="form faq col-12 d-flex align-items-center justify-content-between">
+                    <input class="col-10" type="text" placeholder="درصورتی که درباره این مرکز آموزشی سوالی دارید بنویسید">
+                    <button class="d-flex align-items-center justify-content-center">ارسال <i class="fas fa-long-arrow-alt-left"></i></button>
+                </form>
+                <!-- سوالات -->
+                <div class="uni__comments col-12 mt-5">
+                    <section class="col-12 d-flex align-items-center">
+                        <div class="l-border col-2 d-flex flex-column align-items-center">
+                            <img src="assets/img/user2.jfif">
+                            <h2>رویا فرخ عراقی</h2>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-around h-100">
+                            <h1>سوال</h1>
+                            <p>سلام <br> هزینه پیکاپ کانادا چقدر است و چه روزهایی به آنکارا یا استانبول حمل میکنید</p>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <span>2<i class="fas fa-thumbs-up"></i></span>
+                        </div>
+                    </section>
+                    <section class="col-10 admin d-flex align-items-center">
+                        <div class="l-border col-2 d-flex flex-column align-items-center">
+                            <img src="assets/img/logo-min.png">
+                            <h2></h2>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-around h-100">
+                            <h1>پاسخ</h1>
+                            <p>سلام <br> هزینه پیکاپ کانادا چقدر است و چه روزهایی به آنکارا یا استانبول حمل میکنید</p>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <span>2<i class="fas fa-thumbs-up"></i></span>
+                        </div>
+                    </section>
+                    <section class="col-12 d-flex align-items-center">
+                        <div class="l-border col-2 d-flex flex-column align-items-center">
+                            <img src="assets/img/user1.jfif">
+                            <h2>علی فرخی</h2>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-around h-100">
+                            <h1>سوال</h1>
+                            <p>سلام <br> هزینه پیکاپ کانادا چقدر است و چه روزهایی به آنکارا یا استانبول حمل میکنید</p>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <span>2<i class="fas fa-thumbs-up"></i></span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- مقالات مرتبط -->
+            <div class="d-flex flex-column align-items-center flex-wrap py-5 col-12" >
+                <div class="heading d-flex justify-content-center">
+                    <h3>مقالات مرتبط</h3>
+                </div>
+                <div class="col-12" style="margin: 0 !important; right: 50%; transform: translateX(50%);">
+                    <div class="owl-carousel" id="article">
+                        <div class="hamkar">
+                            <div class="lg">
+                                <img src="assets/img/article1.png">
+                                <section>
+                                    <h3>جاذبه های گردشگری</h3>
+                                    <p>ن کمپ‌های برون مرزی، دوره‌های آموزشی، تفریحی و گردشی هستند که در تعطیلات تابستان، توسط موسسات و کالج‌های بین المللی تحت نظر سرپرستانو مربیان حرفه‌ای و با حضور دانش‌آموزانی با ملیت‌های مختلف از سرتا سر دنیا برگزار می‌گردد</p>
+                                    <button>میخونم</button>
+                                    <span>زمان مشاهده‌ی ویدئو 5 دقیقه</span>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="hamkar">
+                            <div class="lg">
+                                <img src="assets/img/article2.png">
+                                <section>
+                                    <h3>جاذبه های گردشگری</h3>
+                                    <p>این گمپ های برونرزی، دوره های آموزشی، تفریحی و گردشی هستند</p>
+                                    <button>میخونم</button>
+                                    <span>زمان مشاهده‌ی ویدئو 5 دقیقه</span>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="hamkar">
+                            <div class="lg">
+                                <img src="assets/img/article3.png">
+                                <section>
+                                    <h3>جاذبه های گردشگری</h3>
+                                    <p>این گمپ های برونرزی، دوره های آموزشی، تفریحی و گردشی هستند</p>
+                                    <button>میخونم</button>
+                                    <span>زمان مشاهده‌ی ویدئو 5 دقیقه</span>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="hamkar">
+                            <div class="lg">
+                                <img src="assets/img/article4.png">
+                                <section>
+                                    <h3>جاذبه های گردشگری</h3>
+                                    <p>این گمپ های برونرزی، دوره های آموزشی، تفریحی و گردشی هستند</p>
+                                    <button>میخونم</button>
+                                    <span>زمان مشاهده‌ی ویدئو 5 دقیقه</span>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="hamkar">
+                            <div class="lg">
+                                <img src="assets/img/article1.png">
+                                <section>
+                                    <h3>جاذبه های گردشگری</h3>
+                                    <p>این گمپ های برونرزی، دوره های آموزشی، تفریحی و گردشی هستند</p>
+                                    <button>میخونم</button>
+                                    <span>زمان مشاهده‌ی ویدئو 5 دقیقه</span>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>        

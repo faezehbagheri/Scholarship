@@ -2,12 +2,10 @@
 
 
     &__item{
-        // margin-left: 8px;
-        // margin-top: 3rem;
+        // margin-right: -1rem;
 
         div{
             width: 100% !important;
-            // background-color: rebeccapurple;
             position: relative;
             margin: 0 auto;
             cursor: pointer;
@@ -15,7 +13,7 @@
             &:hover{
         
                 section{
-                    height: 100%;
+                    height: 35rem;
                 }
         
                 h3{
@@ -77,6 +75,7 @@
             color: white !important;
             transition: all .5s ease;
             line-height: 2.5rem !important;
+            font-size: 1.6rem;
         }
     
         span{
@@ -92,6 +91,37 @@
         width: 100%;
         margin-top: 1rem;
         box-shadow: 0 0 5px var(--color-primary);
+    }
+
+    .abs-position{
+        position: absolute;
+        right: 75%;
+        top: 2%;
+    }
+
+    &__images{
+        position: relative;
+        img{
+            height: 12rem;
+            width: 95%;
+            background-color: pink;
+            // margin-right: 1.3rem;
+        }
+
+        p{
+            border-radius: 1rem;
+            background-color: rgba($color: #000000, $alpha: .5);
+            // padding: 3.5rem 6rem;
+            height: 12rem;
+            width: 95% !important;
+            cursor: pointer;
+        }
+
+        i{
+            font-size: 5rem;
+            color: white;
+            @include centerABS();
+        }
     }
 
     
