@@ -1,19 +1,30 @@
 .hamkar{
-    height: 26.5rem;
-    margin-left: 8px;
+    height: 29rem;
+    // margin-left: 8px;
     margin-top: 3rem;
 
     div.lg{
-        width: 35rem;
+        width: 95%;
+    }
+    div.sm{
+        width: 22rem;
+    }
 
-        section{
-            padding: 1rem 5rem !important;
+    .camp{
+        text-align: center !important;
+
+        h3{font-size: 2.4rem;}
+
+        p{font-size: 1.8rem !important;}
+
+        &:hover{
+            h3{color: white !important;}
         }
     }
 
     div{
-        width: 19rem;
-        // background-color: rebeccapurple;
+        // width: 19rem;
+        width: 97%;
         position: relative;
         margin: 0 auto;
         cursor: pointer;
@@ -22,6 +33,7 @@
     
             section{
                 height: 100%;
+                background-color: rgba($color: #3D3D3D, $alpha: .7);
             }
     
             h3{
@@ -53,7 +65,7 @@
 
     img{
         width: 100%;
-        height: 26rem;
+        height: 29rem;
         border-radius: 1rem;
     }
 
@@ -67,7 +79,9 @@
 
     section{
         position: absolute;
-        background-color: rgba($color: #000000, $alpha: .5);
+        width: 100%;
+        height: 6.5rem;
+        background-color: var(--color-primary);
         border-radius: 1rem;
         top: 100%;
         transform: translateY(-100%);

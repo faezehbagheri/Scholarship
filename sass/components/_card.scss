@@ -1,7 +1,8 @@
+.sm{width: 85% !important;}
 .card1{
     background-color: var(--color-primary-light);
-    height: 41rem;
-    width: 85%;
+    // height: 41rem;
+    width: 98%;
     margin-top: 8rem;
     margin-bottom: 2rem;
     margin-left: 0 !important;
@@ -13,10 +14,22 @@
 
     @include respond(sm){height: 45rem;}
 
+
+    .hover{
+        overflow: hidden;
+        height: 28rem;
+
+        &:hover img{
+            transform: scale(1.1);
+        }
+    }
+
     &__header{
         height: 23rem;
+        width: 100%;
         position: relative;
         border-radius: 1rem;
+
 
         h1{
             padding: 1.8rem 0;
@@ -29,6 +42,13 @@
             margin: 0 !important;
             transition: all .3s ease;
             z-index: 3;
+        }
+
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transition: all .3s ease;
         }
     }
 
@@ -104,7 +124,7 @@
         background-color: var(--color-secondary);
     }
 
-    .cards__triangle{
+    .card1__triangle{
         transform: translate(-50%,-90%) !important;
         z-index: 1;
     }
@@ -132,9 +152,15 @@
         background-color: var(--color-secondary);
     }
 
+    #img_box{
+        height: 9rem;
+        width: 9rem !important;
+        background-color: transparent;
+    }
+
     h1{
         margin: 1.5rem 0;
-        font-size: 2.6rem;
+        font-size: 2.6rem !important;
         font-weight: 700;
         color: var(--color-primary-dark);
 
@@ -142,9 +168,10 @@
     }
     
     p{
-        font-size: 1.5rem;
+        font-size: 2rem !important;
         color: var(--color-primary-dark);
         text-align: justify;
+        min-height: 10rem;
 
         @include respond(sm){
             line-height: 5rem;
@@ -158,5 +185,42 @@
         float: left;
 
         @include respond(sm){font-size: 2rem;}
+    }
+}
+
+.card3{
+    background-color: white;
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    padding: 5px;
+
+    table{
+        width: 80% !important;
+        margin: 2rem 0 !important;
+    }
+
+    img{
+        height: 8rem;
+    }
+
+    button{
+        // width: 14rem !important;
+        width: 90% !important;
+        height: 4.2rem;
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        // margin-top: 2rem;
+        background-color: var(--color-secondary);
+        border: none;
+        color: white;
+        box-shadow: 0 0 0 2px white,
+                    0 0 0 4px var(--color-secondary);
+
+        @include respond(sm){
+            height: 5.2rem;
+            font-size: 2rem;
+            margin-top: 3rem !important;
+        }
     }
 }

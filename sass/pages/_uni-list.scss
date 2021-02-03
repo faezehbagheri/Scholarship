@@ -1,0 +1,129 @@
+.uni-list{
+
+    nav{
+        position: relative;
+        z-index: 9;
+    }
+
+    .tab-content{
+        width: 96%;
+        margin: 0 auto;
+        border: 2px solid var(--color-primary);
+        border-radius: 1.5rem;
+        margin-top: -3rem;
+        padding: 0 !important;
+        padding-bottom: 3rem !important;
+        // padding: 3rem 15rem;
+
+        div{
+            margin: 0 auto;
+            padding: 5rem 10rem;
+            top: 10%;
+            height: 65rem;
+            overflow-y: scroll;
+            
+            &::-webkit-scrollbar-track{
+                border-radius: 10px;
+                position: absolute;
+            }
+        
+            &::-webkit-scrollbar{
+                width: 10px;
+            }
+        
+            &::-webkit-scrollbar-thumb{
+                border-radius: 10px;
+                background-color: var(--color-primary);
+            }
+        }
+    }
+
+    p{
+        font-size: 1.8rem;
+        line-height: 5rem;
+        text-align: justify;
+    }
+
+    table{
+        width: 90%;
+        font-size: 1.6rem;
+        margin: 2rem;
+        // margin: 1rem auto;
+        text-align: center;
+        border-color: var(--color-primary) !important;
+    }
+
+    th{
+        background-image: -moz-linear-gradient(center top , #F8F8F8, #ECECEC);
+        background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#F8F8F8), to(#ECECEC), color-stop(.4, #F8F8F8));
+    }
+    
+    td{
+        background-color: white;
+    }
+
+    .filter-tabs{
+        border: 1px solid var(--color-primary);
+        border-radius: 1rem;
+        background-color: var(--color-primary-light);
+
+        a,a:link,a:visited{
+            font-size: 1.8rem;
+            color: black;
+            transition: all .3s ease;
+            padding: 1rem;
+        }
+    }
+
+    .filter-acrive{
+        border-radius: 8px;
+        height: 100% !important;
+        clip-path: polygon(0 50% ,20% 0 , 100% 0 , 100% 100%, 20% 100%);
+        background-color: var(--color-secondary);
+        color: white !important;
+    }
+
+    .filter{
+        
+        h2{
+            padding: 1rem;
+            width: 100%;
+            background-color: var(--color-secondary);
+            color: white;
+            border-radius: 1rem;
+            text-align: center;
+            font-size: 2.3rem;
+        }
+        
+        div.search{
+            height: 4rem;
+            width: 90%;
+            border: 1px solid var(--color-primary);
+            border-radius: 3rem;
+            padding: 0 1rem;
+            margin: 8px auto;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        i{
+            font-size: 2rem;
+            color: var(--color-secondary);
+        }
+
+        input{
+            flex: 1;
+            height: 100%;
+            border: none;
+            outline: none;
+            margin: 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        label{
+            font-size: 1.6rem;
+        }
+    }
+}

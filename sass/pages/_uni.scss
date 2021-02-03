@@ -15,6 +15,7 @@
         border: 1px solid var(--color-primary);
         border-radius: 1rem;
         margin-top: 1rem;
+        margin: auto;
         overflow: hidden; 
 
         div{width: 100%;}
@@ -30,6 +31,11 @@
         font-size: 1.6rem;
         margin: 1rem auto;
         text-align: center;
+    }
+
+    th{
+        background-image: -moz-linear-gradient(center top , #F8F8F8, #ECECEC);
+        background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#F8F8F8), to(#ECECEC), color-stop(.4, #F8F8F8));
     }
     
     td{
@@ -56,7 +62,7 @@
     &__comments{
 
         section{
-            height: 20rem;
+            min-height: 20rem;
             border: 1px solid var(--color-primary);
             border-radius: 1.5rem;
             margin-top: 1.5rem;
@@ -68,6 +74,8 @@
         .l-border{
             padding: 2rem 0;
             border-left: 1px solid var(--color-primary);
+
+            @include respond(md){border-left: none;}
         }
 
         img{

@@ -1,4 +1,4 @@
-.form{
+form{
     padding: 1.5rem 0;
     margin-top: 2rem;
     border-radius: 1rem;
@@ -23,6 +23,7 @@
 
     button{
         width: 14rem !important;
+        width: 98% !important;
         height: 4.2rem;
         border-radius: 3rem;
         font-size: 1.6rem;
@@ -47,7 +48,7 @@
 
     button{
         height: 5.5rem;
-        width: 20rem !important;
+        // width: 20rem !important;
         font-size: 1.8rem;
     }
 }
