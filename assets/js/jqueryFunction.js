@@ -50,6 +50,34 @@ $(document).ready(function () {
     var $masir = $("#masir");
     var $camp = $("#camp");
     var $school = $("#schl");
+    var $info = $("#info");
+
+    
+    /// info ///
+    $info.children().each(function (index) {
+        $(this).attr('data-position', index);
+    });
+
+    $info.owlCarousel({
+        rtl:true,
+        loop: false,
+        responsive: {
+            0: {
+                items: 1
+            },            
+            600:{
+                items:2
+            },
+            1200:{
+                items:3
+            },
+        }
+    });
+
+    $(document).on('click', '.owl-item>div', function () {
+        var $speed = 300;  // in ms
+        $info.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+    });
 
     
     /// school ///
@@ -82,8 +110,8 @@ $(document).ready(function () {
     });
 
     
-    /// school ///
-    $school.children().each(function (index) {
+    /// camp ///
+    $camp.children().each(function (index) {
         $(this).attr('data-position', index);
     });
 

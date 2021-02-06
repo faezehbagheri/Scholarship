@@ -12,7 +12,7 @@
     border-radius: 1rem;
     box-shadow: 0 0 5px var(--color-primary);
 
-    @include respond(sm){height: 45rem;}
+    // @include respond(sm){height: 45rem;}
 
 
     .hover{
@@ -218,9 +218,9 @@
                     0 0 0 4px var(--color-secondary);
 
         @include respond(sm){
-            height: 5.2rem;
-            font-size: 2rem;
-            margin-top: 3rem !important;
+            // height: 5.2rem;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
         }
     }
 }

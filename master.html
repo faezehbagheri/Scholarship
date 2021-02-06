@@ -28,6 +28,41 @@
     }
 </style>
 <body>
+    <!-- نویگیشن موبایل -->
+    <div class="navbar-collapse d-block d-md-none cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="bs-example-navbar-collapse-1" style="z-index: 999999 !important;">
+        <div class="mobile-menu__header">
+            <a href="#"><img src="./assets/img/logo-min.png" class="mobile-menu__logo"></a>
+        </div>
+        <div class="mobile-menu__nav">
+            <ul class="mobile-menu__list flex column align-start">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">خانه</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <span class="mobile-menu__link mobile-menu__margin">کشورها</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">خدمات</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">درباره ما</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">تماس با ما</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">وبلاگ</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">لینک های پربازدید</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">گالری تصاویر</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+
     <!-- Header -->
     <header class="header mb-5">
         <!-- Social Media -->
@@ -39,7 +74,7 @@
                 <i class="fab fa-youtube d-flex align-items-center justify-content-center"></i>
                 <i class="fab fa-twitter d-flex align-items-center justify-content-center"></i>
                 <i class="fab fa-linkedin-in d-flex align-items-center justify-content-center"></i>
-                <span class="ml-auto d-flex">0912-1234567<i
+                <span class="ml-auto d-none d-sm-flex">0912-1234567<i
                         class="fab fa-whatsapp d-flex align-items-center justify-content-center"></i></span>
             </div>
         </section>
@@ -49,9 +84,9 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo.png" class="d-inline-block align-top" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button type="button" class="navbar-toggle toggle-menu menu-left push-body pull-left"
+                    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fas fa-bars mobile-header__icon"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -166,6 +201,7 @@
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/function.js"></script>
     <script src="/assets/js/jqueryFunction.js"></script>
+    <script src="/assets/js/pushMenu.js"></script>
 
     <!-- CDNs -->
     <!-- <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">

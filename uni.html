@@ -28,6 +28,41 @@
     }
 </style>
 <body>
+    <!-- نویگیشن موبایل -->
+    <div class="navbar-collapse d-block d-md-none cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="bs-example-navbar-collapse-1" style="z-index: 999999 !important;">
+        <div class="mobile-menu__header">
+            <a href="#"><img src="./assets/img/logo-min.png" class="mobile-menu__logo"></a>
+        </div>
+        <div class="mobile-menu__nav">
+            <ul class="mobile-menu__list flex column align-start">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">خانه</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <span class="mobile-menu__link mobile-menu__margin">کشورها</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">خدمات</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">درباره ما</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">تماس با ما</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">وبلاگ</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">لینک های پربازدید</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">گالری تصاویر</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+
     <!-- Header -->
     <header class="header mb-5">
         <!-- Social Media -->
@@ -39,7 +74,7 @@
                 <i class="fab fa-youtube d-flex align-items-center justify-content-center"></i>
                 <i class="fab fa-twitter d-flex align-items-center justify-content-center"></i>
                 <i class="fab fa-linkedin-in d-flex align-items-center justify-content-center"></i>
-                <span class="ml-auto d-flex">0912-1234567<i
+                <span class="ml-auto d-none d-sm-flex">0912-1234567<i
                         class="fab fa-whatsapp d-flex align-items-center justify-content-center"></i></span>
             </div>
         </section>
@@ -49,9 +84,9 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo.png" class="d-inline-block align-top" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button type="button" class="navbar-toggle toggle-menu menu-left push-body pull-left"
+                    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fas fa-bars mobile-header__icon"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -159,17 +194,19 @@
                 <div class="gallery d-flex flex-column col-xl-7">
                     <div class="d-flex">
                         <div class="gallery__item col-md-9 px-0 px-md-3">
-                            <div>
-                                <img src="assets/img/gallery1.png">
-                                <i class="fas fa-play"></i>
-                                <section>
-                                    <h3>جاذبه های گردشگری</h3>
-                                    <p>این کمپ‌های برون مرزی، دوره‌های آموزشی، تفریحی و گردشی هستند که در تعطیلات تابستان، توسط موسسات و کالج‌های بین المللی
-                                        تحت نظر سرپرستانو مربیان حرفه‌ای و با حضور دانش‌آموزانی با ملیت‌های مختلف از سرتا سر دنیا برگزار می‌گردد. این کمپ‌های برون
-                                        مرزی، دوره‌های آموزشی، تفریحی و گردشی هستند که در تعطیلات تابستان، توسط موسسات و کالج‌های بین المللی، تحت نظر سرپرستان
-                                       .و مربیان حرفه‌ای و با حضور دانش‌آموزانی با ملیت‌های مختلف از سرتا سر دنیا برگزار می‌گردد</p>
-                                    <span>زمان مشاهده‌ی ویدئو 5 دقیقه</span>
-                                </section>
+                            <div class="hamkar">
+                                <div>
+                                    <img src="assets/img/gallery1.png">
+                                    <i class="fas fa-play"></i>
+                                    <section>
+                                        <h3>جاذبه های گردشگری</h3>
+                                        <p>این کمپ‌های برون مرزی، دوره‌های آموزشی، تفریحی و گردشی هستند که در تعطیلات تابستان، توسط موسسات و کالج‌های بین المللی
+                                            تحت نظر سرپرستانو مربیان حرفه‌ای و با حضور دانش‌آموزانی با ملیت‌های مختلف از سرتا سر دنیا برگزار می‌گردد. این کمپ‌های برون
+                                            مرزی، دوره‌های آموزشی، تفریحی و گردشی هستند که در تعطیلات تابستان، توسط موسسات و کالج‌های بین المللی، تحت نظر سرپرستان
+                                           .و مربیان حرفه‌ای و با حضور دانش‌آموزانی با ملیت‌های مختلف از سرتا سر دنیا برگزار می‌گردد</p>
+                                        <span>زمان مشاهده‌ی ویدئو 5 دقیقه</span>
+                                    </section>
+                                </div>
                             </div>
                         </div>
                         <div class="d-none d-md-flex flex-column col-3 px-0">
@@ -628,7 +665,7 @@
                             <span>2<i class="fas fa-thumbs-up"></i></span>
                         </div>
                     </section>
-                    <section class="col-12 d-flex flex-column flex-md-row align-items-center py-3">
+                    <section class="col-md-10 d-flex flex-column flex-md-row align-items-center py-3">
                         <div class="l-border col-md-2 d-flex flex-md-column align-items-center px-0">
                             <img src="assets/img/logo-min.png">
                             <h2></h2>
@@ -785,5 +822,6 @@
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/function.js"></script>
     <script src="/assets/js/jqueryFunction.js"></script>
+    <script src="/assets/js/pushMenu.js"></script>
 </body>
 </html>

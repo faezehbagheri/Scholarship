@@ -28,6 +28,42 @@
     }
 </style>
 <body>
+
+    <!-- نویگیشن موبایل -->
+    <div class="navbar-collapse d-block d-md-none cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="bs-example-navbar-collapse-1" style="z-index: 999999 !important;">
+        <div class="mobile-menu__header">
+            <a href="#"><img src="./assets/img/logo-min.png" class="mobile-menu__logo"></a>
+        </div>
+        <div class="mobile-menu__nav">
+            <ul class="mobile-menu__list flex column align-start">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">خانه</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <span class="mobile-menu__link mobile-menu__margin">کشورها</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">خدمات</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">درباره ما</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">تماس با ما</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">وبلاگ</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">لینک های پربازدید</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__margin" href="#">گالری تصاویر</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+
     <!-- Header -->
     <header class="header mb-5">
         <!-- Social Media -->
@@ -39,7 +75,7 @@
                 <i class="fab fa-youtube d-flex align-items-center justify-content-center"></i>
                 <i class="fab fa-twitter d-flex align-items-center justify-content-center"></i>
                 <i class="fab fa-linkedin-in d-flex align-items-center justify-content-center"></i>
-                <span class="ml-auto d-flex">0912-1234567<i
+                <span class="ml-auto d-none d-sm-flex">0912-1234567<i
                         class="fab fa-whatsapp d-flex align-items-center justify-content-center"></i></span>
             </div>
         </section>
@@ -49,9 +85,9 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo.png" class="d-inline-block align-top" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button type="button" class="navbar-toggle toggle-menu menu-left push-body pull-left"
+                    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fas fa-bars mobile-header__icon"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -113,11 +149,11 @@
 
             <!-- معرفی -->
             <section >
-                <div class="card2 d-flex align-items-center">
+                <div class="card2 d-flex flex-column flex-sm-row align-items-sm-center">
                     <div class="card2__circle " id="img_box">
                         <img src="assets/img/canada.png">
                     </div>
-                    <div class="col-10 col-lg-11">
+                    <div class="col-sm-10 col-lg-11">
                         <h1>دانشگاه ها و کالج های کانادا</h1>
                         <p> این کمپ‌های برون مرزی، دوره‌های آموزشی، تفریحی و گردشی هستند که در تعطیلات تابستان، توسط موسسات و کالج‌های بین المللی
                             تحت نظر سرپرستانو مربیان حرفه‌ای و با حضور دانش‌آموزانی با ملیت‌های مختلف از سرتا سر دنیا برگزار می‌گردد. این کمپ‌های برون
@@ -129,12 +165,12 @@
             </section>
 
             <div>
-                <nav class="multipleTabs tabs d-flex align-items-end flex-wrap col-12" >
+                <nav class="multipleTabs tabs d-flex align-items-end flex-wrap col-12 owl-carousel" id="info">
                     <a data-trigger="content01" class="col-4 label active">
                         <div class="card1">
                             <div class="card1__header hover d-flex align-items-end">
                                 <img src="assets/img/uni1.png" alt="">
-                                <h1>مقاله ها</h1>
+                                <h1>دانشگاه ها در کانادا</h1>
                                 <span class="card1__triangle"></span>
                             </div>
                         </div>
@@ -143,7 +179,7 @@
                         <div class="card1">
                             <div class="card1__header hover d-flex align-items-end">
                                 <img src="assets/img/uni2.png" alt="">
-                                <h1>مقاله ها</h1>
+                                <h1>شهر های دانشگاهی در کانادا</h1>
                                 <span class="card1__triangle"></span>
                             </div>
                         </div>
@@ -152,7 +188,7 @@
                         <div class="card1">
                             <div class="card1__header hover d-flex align-items-end">
                                 <img src="assets/img/uni3.png" alt="">
-                                <h1>مقاله ها</h1>
+                                <h1>برنامه ها ، هزینه ها و ویزا</h1>
                                 <span class="card1__triangle"></span>
                             </div>
                         </div>
@@ -209,64 +245,179 @@
             </div>
             
             <!-- فیلترها -->
-            <div class="d-flex mt-5" style="height: 100rem;">
-                <div class="col-4 filter">
+            <div class="d-flex flex-wrap mt-5">
+                <div class="col-lg-3 filter">
                     <h2>معیارهای جستجو</h2>
-                    <section>
-                        <h3>زبان تحصیل</h3>
-                        <div class="search d-flex align-items-center">
-                            <i class="fas fa-search"></i>
-                            <input type="text" placeholder="جستجو کن...">
-                        </div>
-                        <div class="options">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                  <!-- Default checked -->
-                                  <div class="form-check">
-                                    <input
-                                      class="form-check-input"
-                                      type="checkbox"
-                                      value=""
-                                      id="flexCheckDefault"
-                                    />
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Default checkbox
-                                    </label>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <!-- Default checked -->
-                                  <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="check2">
-                                    <label class="custom-control-label" for="check2">Check me</label>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <!-- Default checked -->
-                                  <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="check3" checked>
-                                    <label class="custom-control-label" for="check3">Check me</label>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <!-- Default checked -->
-                                  <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="check4" checked>
-                                    <label class="custom-control-label" for="check4">Check me</label>
-                                  </div>
-                                </li>
-                                <li class="list-group-item">
-                                  <!-- Default checked -->
-                                  <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="check5">
-                                    <label class="custom-control-label" for="check5">Check me</label>
-                                  </div>
-                                </li>
-                              </ul>
-                        </div>
-                    </section>
+                    <div class="d-flex flex-wrap flex-lg-column">
+                    <div class=" col-sm-6 col-lg-12">
+                        <section class="filter-item">
+                            <h3>زبان تحصیل</h3>
+                            <div class="search d-flex align-items-center">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="جستجو کن...">
+                            </div>
+                            <div class="options">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="check1">
+                                            <label class="custom-control-label" for="check1">انگلیسی</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check2">
+                                        <label class="custom-control-label" for="check2">فرانسوی</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check3" checked>
+                                        <label class="custom-control-label" for="check3">آلمانی</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check4" checked>
+                                        <label class="custom-control-label" for="check4">ترکی</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check5">
+                                        <label class="custom-control-label" for="check5">روسی</label>
+                                    </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class=" col-sm-6 col-lg-12">
+                        <section class="filter-item">
+                            <h3>موقعیت مکانی</h3>
+                            <div class="search d-flex align-items-center">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="جستجو کن...">
+                            </div>
+                            <div class="options">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="makan1" checked>
+                                            <label class="custom-control-label" for="makan1">آلبرتا</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="makan2">
+                                        <label class="custom-control-label" for="makan2">انتاریو</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="makan3">
+                                        <label class="custom-control-label" for="makan3">بریتیش کلمبیا</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="makan4">
+                                        <label class="custom-control-label" for="makan4">جزیره پرنس ادوارد</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="makan5">
+                                        <label class="custom-control-label" for="makan5">ساسکاچوان</label>
+                                    </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class=" col-sm-6 col-lg-12">
+                        <section class="filter-item">
+                            <h3>رشته تحصیلی</h3>
+                            <div class="search d-flex align-items-center">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="جستجو کن...">
+                            </div>
+                            <div class="options">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="reshte1" checked>
+                                            <label class="custom-control-label" for="reshte1">علوم پزشکی</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="reshte2">
+                                        <label class="custom-control-label" for="reshte2">مهندسی</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="reshte3">
+                                        <label class="custom-control-label" for="reshte3">هنر و معماری</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="reshte4">
+                                        <label class="custom-control-label" for="reshte4">بیزینس</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="reshte5">
+                                        <label class="custom-control-label" for="reshte5">علوم انسانی</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="reshte6">
+                                        <label class="custom-control-label" for="reshte6">علوم پزشکی</label>
+                                    </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class=" col-sm-6 col-lg-12">
+                        <section class="filter-item">
+                            <h3>مقطع تحصیلی</h3>
+                            <div class="search d-flex align-items-center">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="جستجو کن...">
+                            </div>
+                            <div class="options">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="maghta1" checked>
+                                            <label class="custom-control-label" for="maghta1">لیسانس</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="maghta2">
+                                        <label class="custom-control-label" for="maghta2">فوق لیسانس</label>
+                                    </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="maghta3">
+                                        <label class="custom-control-label" for="maghta3">دکتری</label>
+                                    </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-                <div class="col-8">
+                </div>
+                <div class="col-lg-9">
                     <nav class="filter-tabs d-flex align-items-end flex-wrap col-12 px-0" >
                         <a data-trigger="content-1" class="col-3 label filter-acrive">مرتب سازی بر اساس</a>
                         <a data-trigger="content-2" class="col-3 label">بیشترین شهریه</a>
@@ -274,9 +425,9 @@
                         <a data-trigger="content-4" class="col-3 label ">رتبه جهانی</a>
                     </nav> 
                     <div class="list" id="content-1">
-                        <div class="card3 d-flex align-items-center justify-content-around">
-                            <img class="col-2" src="assets/img/uni-logo1.png">
-                            <table class="col-7 table table-bordered col-6">
+                        <div class="card3 d-flex flex-column flex-sm-row align-items-center justify-content-around">
+                            <img class="col-6 col-sm-2" src="assets/img/uni-logo1.png">
+                            <table class="col-sm-6 table table-bordered">
                                 <thead class="thead-light">
                                     <tr>
                                         <th>موقعیت مکانی</th>
@@ -294,13 +445,13 @@
                                     </tr>
                                 </tbody>
                             </table> 
-                            <div class="col-2" >
+                            <div class="col-6 col-sm-2" >
                                 <button>اطلاعات بیشتر</button>
                             </div>
                         </div>
-                        <div class="card3 d-flex align-items-center justify-content-around">
-                            <img class="col-2" src="assets/img/uni-logo2.png">
-                            <table class="col-7 table table-bordered col-6">
+                        <div class="card3 d-flex flex-column flex-sm-row align-items-center justify-content-around">
+                            <img class="col-6 col-sm-2" src="assets/img/uni-logo2.png">
+                            <table class="col-sm-6 table table-bordered">
                                 <thead class="thead-light">
                                     <tr>
                                         <th>موقعیت مکانی</th>
@@ -318,13 +469,13 @@
                                     </tr>
                                 </tbody>
                             </table> 
-                            <div class="col-2" >
+                            <div class="col-6 col-sm-2" >
                                 <button>اطلاعات بیشتر</button>
                             </div>
                         </div>
-                        <div class="card3 d-flex align-items-center justify-content-around">
-                            <img class="col-2" src="assets/img/uni-logo1.png">
-                            <table class="col-7 table table-bordered col-6">
+                        <div class="card3 d-flex flex-column flex-sm-row align-items-center justify-content-around">
+                            <img class="col-6 col-sm-2" src="assets/img/uni-logo1.png">
+                            <table class="col-sm-6 table table-bordered">
                                 <thead class="thead-light">
                                     <tr>
                                         <th>موقعیت مکانی</th>
@@ -342,13 +493,13 @@
                                     </tr>
                                 </tbody>
                             </table> 
-                            <div class="col-2" >
+                            <div class="col-6 col-sm-2" >
                                 <button>اطلاعات بیشتر</button>
                             </div>
                         </div>
-                        <div class="card3 d-flex align-items-center justify-content-around">
-                            <img class="col-2" src="assets/img/uni-logo2.png">
-                            <table class="col-7 table table-bordered col-6">
+                        <div class="card3 d-flex flex-column flex-sm-row align-items-center justify-content-around">
+                            <img class="col-6 col-sm-2" src="assets/img/uni-logo2.png">
+                            <table class="col-sm-6 table table-bordered">
                                 <thead class="thead-light">
                                     <tr>
                                         <th>موقعیت مکانی</th>
@@ -366,13 +517,13 @@
                                     </tr>
                                 </tbody>
                             </table> 
-                            <div class="col-2" >
+                            <div class="col-6 col-sm-2" >
                                 <button>اطلاعات بیشتر</button>
                             </div>
                         </div>
-                        <div class="card3 d-flex align-items-center justify-content-around">
-                            <img class="col-2" src="assets/img/uni-logo1.png">
-                            <table class="col-7 table table-bordered col-6">
+                        <div class="card3 d-flex flex-column flex-sm-row align-items-center justify-content-around">
+                            <img class="col-6 col-sm-2" src="assets/img/uni-logo1.png">
+                            <table class="col-sm-6 table table-bordered">
                                 <thead class="thead-light">
                                     <tr>
                                         <th>موقعیت مکانی</th>
@@ -390,13 +541,13 @@
                                     </tr>
                                 </tbody>
                             </table> 
-                            <div class="col-2" >
+                            <div class="col-6 col-sm-2" >
                                 <button>اطلاعات بیشتر</button>
                             </div>
                         </div>
-                        <div class="card3 d-flex align-items-center justify-content-around">
-                            <img class="col-2" src="assets/img/uni-logo2.png">
-                            <table class="col-7 table table-bordered col-6">
+                        <div class="card3 d-flex flex-column flex-sm-row align-items-center justify-content-around">
+                            <img class="col-6 col-sm-2" src="assets/img/uni-logo2.png">
+                            <table class="col-sm-6 table table-bordered">
                                 <thead class="thead-light">
                                     <tr>
                                         <th>موقعیت مکانی</th>
@@ -414,7 +565,55 @@
                                     </tr>
                                 </tbody>
                             </table> 
-                            <div class="col-2" >
+                            <div class="col-6 col-sm-2" >
+                                <button>اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                        <div class="card3 d-flex flex-column flex-sm-row align-items-center justify-content-around">
+                            <img class="col-6 col-sm-2" src="assets/img/uni-logo1.png">
+                            <table class="col-sm-6 table table-bordered">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>موقعیت مکانی</th>
+                                        <th>شهریه</th>
+                                        <th>رتبه جهانی</th>
+                                        <th>نوع دانشگاه</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>استان انتاریو</td>
+                                        <td>70000 دلار کانادا</td>
+                                        <td>35</td>
+                                        <td>دولتی</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                            <div class="col-6 col-sm-2" >
+                                <button>اطلاعات بیشتر</button>
+                            </div>
+                        </div>
+                        <div class="card3 d-flex flex-column flex-sm-row align-items-center justify-content-around">
+                            <img class="col-6 col-sm-2" src="assets/img/uni-logo2.png">
+                            <table class="col-sm-6 table table-bordered">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>موقعیت مکانی</th>
+                                        <th>شهریه</th>
+                                        <th>رتبه جهانی</th>
+                                        <th>نوع دانشگاه</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>استان انتاریو</td>
+                                        <td>70000 دلار کانادا</td>
+                                        <td>35</td>
+                                        <td>دولتی</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                            <div class="col-6 col-sm-2" >
                                 <button>اطلاعات بیشتر</button>
                             </div>
                         </div>
@@ -488,6 +687,8 @@
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/function.js"></script>
     <script src="/assets/js/jqueryFunction.js"></script>
+    <script src="/assets/js/pushMenu.js"></script>
+
 
     <!-- CDNs -->
     <!-- <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
